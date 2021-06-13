@@ -1,0 +1,21 @@
+[package]
+name = "ke04z4-pac"
+version = "0.1.0"
+authors = ["Nehalem501 <tomek.lecocq@hotmail.fr>"]
+edition = "2018"
+description = "PAC for NXP Kinetis MKE04Zx microcontrollers"
+license = "CC0-1.0"
+repository="https://github.com/nehalem501/ke04z4-pac"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+cortex-m = "0.7"
+vcell = "0.1"
+
+[dependencies.cortex-m-rt]
+optional = true
+version = "0.6"
+
+[features]
+rt = ["cortex-m-rt/device"]
